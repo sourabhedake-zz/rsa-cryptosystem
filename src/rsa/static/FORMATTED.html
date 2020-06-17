@@ -1,0 +1,324 @@
+ <div class="row">
+                <div  class="col-lg-12">
+                    <h1  style="background-color: #FFF;margin-top: 10px; box-shadow: 0px 0px 10px;  padding: 1%; width: 100% " class="page-header" style="color:#0099ff;">Alone in a Jungle</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+
+            <!-- /Panel Heading -->
+		   <div  style="background-color: #FFF; box-shadow: 0px 0px 10px; width: 100%;" class="panel panel-default">
+                        <div class="panel-heading">
+	                            <b>Problem Statement</b>
+                        </div>
+            
+                        <!-- /.panel-body -->
+                        <div class="panel-body">
+                       		 
+
+
+
+                            
+
+You are all alone in the jungle of <b>N * M</b> unit area. <br>
+Ofcourse the jungle is having wild animals. <br>
+All the animals are currently <b> resting</b>, but these animals are very sensitive to noise and if you reach nearby any animal, you will get killed up. <br>
+There is a <b>single exit </b> from jungle and you know it.You can run <b> horizontally, vertically and diagonally</b> .<br>
+Find the <b> minimum steps</b> to go out of jungle from your current position without getting killed. <br>
+If you step on exit point, you will get <b> immediately </b> teleported to safe place out of jungle. <br>
+Teleporting works only for humans and not for wild animals. <br>
+Also if multiple wild animals are near to each other, they all will attack and kill each other  <br>
+i.e if there is a <b> chain of wild animals </b>, all of them will be destroyed. <br>
+Also if you come nearby multiple wild animals, they will share you equally. Beware and save yourself. <br>
+If they have choice between you other animals, they will prefer your meat then they will attack each other. <br>
+ <br>
+
+ <br>
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+                        <!-- /.panel-body -->
+                    </div>
+
+		<!-- /Panel Heading -->
+		   <div  style="background-color: #FFF; box-shadow: 0px 0px 10px; width: 100%;" class="panel panel-default">
+                        <div class="panel-heading">
+	                            <b>Input and Output Format</b>
+                        </div>
+            
+                        <!-- /.panel-body -->
+                        <div class="panel-body">
+                       		 <b>Input:</b>  <br>
+Take no of test cases input in <b><i>TEST</i></b> variable. <br>
+First line of every test will contain <b><i>N and M </i></b>i.e the height and width of jungle. <br>
+Next N lines contains a string of M characters. <br>
+These characters can be: <br><span class='tab'>&nbsp;</span> 
+    Y : Your Position <br><span class='tab'>&nbsp;</span> 
+    O : Blank unit in jungle <br><span class='tab'>&nbsp;</span> 
+    W : Wild Animal <br><span class='tab'>&nbsp;</span> 
+    E : Exit <br>
+ <br>
+<b>Output:</b> <br>
+ <br>
+Print the <b>minimum</b> steps to travel to go to exit point for every test case on new line. <br>
+If the way to exit is not possible or if you are getting killed print "<b>-1</b>" without quotes. <br>
+ 
+			</div>
+                        <!-- /.panel-body -->
+                    </div>
+            
+		
+
+
+		<!-- /Panel Heading -->
+		   <div style="background-color: #FFF; box-shadow: 0px 0px 10px; width: 100%;"  class="panel panel-default">
+                        <div class="panel-heading">
+	                         <b>Sample Input &amp Output with explanation</b>
+                        </div>
+            
+                        <!-- /.panel-body -->
+                        <div class="panel-body">
+                  Sample Test Case 1: <br>
+ <br>
+    Input: <br><FONT FACE="courier"> <span class='tab'>&nbsp;</span> 
+    1 <br> <span class='tab'>&nbsp;</span> 
+    3 4 <br> <span class='tab'>&nbsp;</span> 
+    OYOO <br> <span class='tab'>&nbsp;</span> 
+    OOOO <br> <span class='tab'>&nbsp;</span> 
+    OWOE <br><span class='tab'>&nbsp;</span> 
+ <br></FONT>
+    Output: <br><FONT FACE="courier">
+    3 <br></FONT>
+ <br>
+    Explanation: <br>
+ <br><FONT FACE="courier">
+    OYOO    <br>
+    OOOO    <br>
+    OWOE <br>
+ <br></FONT>
+    Moving 1 step to right (You can't move down. If you do so, the wild animal will wake up and eat you) <br>
+ <br><FONT FACE="courier">
+    OOYO   <br>
+    OOOO    <br>
+    OWOE <br>
+ <br></FONT>
+    Moving 1 step diagonally <br>
+    <FONT FACE="courier">
+    OOOO <br>
+    OOOY    <br>
+    OWOE <br>
+ <br></FONT>
+    Moving 1 step down <br>
+    <FONT FACE="courier">
+    OOOO <br>
+    OOOO    <br>
+    OWOY <br>
+ <br></FONT>
+    You reached exit point in 3 steps. <br>
+
+ <hr>
+Sample Test Case 2  : <br>
+    Input: <br>
+    <FONT FACE="courier"><span class='tab'>&nbsp;</span> 
+    1 <br><span class='tab'>&nbsp;</span> 
+    10 6 <br><span class='tab'>&nbsp;</span> 
+    OOWOOO <br><span class='tab'>&nbsp;</span> 
+    WOOOOO <br><span class='tab'>&nbsp;</span> 
+    OOOWOO <br><span class='tab'>&nbsp;</span> 
+    OWWOOO <br><span class='tab'>&nbsp;</span> 
+    OOOOOO <br><span class='tab'>&nbsp;</span> 
+    OOOWOO <br><span class='tab'>&nbsp;</span> 
+    OOOOOO <br><span class='tab'>&nbsp;</span> 
+    OOOOOO <br><span class='tab'>&nbsp;</span> 
+    OOEWOO <br><span class='tab'>&nbsp;</span> 
+    OWOOOY <br><span class='tab'>&nbsp;</span> 
+    </FONT> 
+ <br>
+    Output: <br><span class='tab'>&nbsp;</span> 
+    <FONT FACE="courier">
+    13 <br>
+    </FONT>
+ <br>
+    Explanation: <br>
+    Consider indexing from 1  <br>
+    Three animals in 3rd and 4th row are in a chain. Thus, they all will be destroyed. <br>
+ <br>
+    See The Image for Explanation<br>
+    
+    <img src="/static/q1.1.png">
+
+    <br>
+    You step on Exit point in 13 steps. <br>
+    Before wild animals kill you, you will be teleported to safe place. <br>
+ <hr>
+Sample Test Case 3: <br>
+    Input: <br><FONT FACE="courier">
+    <span class='tab'>&nbsp;</span> 
+    1 <br><span class='tab'>&nbsp;</span> 
+    3 4 <br><span class='tab'>&nbsp;</span> 
+    YOOO <br><span class='tab'>&nbsp;</span> 
+    WOOO <br><span class='tab'>&nbsp;</span> 
+    WOOE <br><span class='tab'>&nbsp;</span> 
+ <br></FONT>
+    Output: <br><span class='tab'>&nbsp;</span> 
+    <FONT FACE="courier">
+    -1 <br>
+    </FONT>
+ <br>
+    Explanation: <br>
+ <br>
+    First, you will be killed by animal resting in 2nd row, as he will prefer your meat first. <br><FONT FACE="courier">
+    OOOO <br>
+    WOOO <br>
+    WOOE <br>
+ <br></FONT>
+    Then, they will kill each other. <br>
+    <FONT FACE="courier">
+    OOOO <br>
+    OOOO <br>
+    OOOE <br></FONT>
+			</div>
+                        <!-- /.panel-body -->
+                    </div>
+
+            
+		<!-- /Panel Heading -->
+		   <div  style="background-color: #FFF; box-shadow: 0px 0px 10px; width: 100%;"  class="panel panel-default">
+                        <div style="height: 4rem" class="panel-heading">
+			<b>Code Stuff</b>
+            </div>
+                        <!-- /.panel-body -->
+
+
+                        <div  class="panel-body" style="width: 100%">
+
+              
+      
+                       		 <form id="mainForm" style="width: 100%" action='/submission/?x={{question.questionid}}' enctype="multipart/form-data" method='POST'>
+
+                             <div style="margin-left: -15px; width: 100%; height: 100%">
+      
+        <table style="width: 100%;">
+          <tr>
+              <td><h3><center>Language<select  id="lang" name="language" onchange="edit()"><option value="C" >C</option><option value="C++">C++</option><option value="Java">Java</option><option value="Python" >Python</option></select><span style="margin-left: 85px"></span> Import file</center></h3></td>
+              <td><h4><input type="file"  name="upload" accept="text/*"></h4></td>
+              <td><input style="box-shadow: 0px 0px 10px #AAA; font-size: 20px" type="button" value="Submit Code"  onclick="sendForm()"></td>
+          </tr>  
+        </table>
+        
+        </div>
+        
+        </div>
+            
+
+          <table style="width: 100%; height: 40%" >
+    <tr style="height: 40rem; width: 100%">
+
+  <td  style=" height: 38rem; width: 100%">
+        <PRE  name="tmptext"  style="height: 42rem ; margin: 3px"   id="code" ></PRE>
+        <textarea name="my_textarea" hidden="true"  id="hidtext"></textarea>
+        <textarea name="bf1" hidden="false"  id="bf1">{{buf1}}</textarea>
+        <textarea name="bf2"  hidden="false" id="bf2">{{buf2}}</textarea>
+        <textarea name="bf3"  hidden="false" id="bf3">{{buf3}}</textarea>
+        <textarea name="bf4"  hidden="false" id="bf4">{{buf4}}</textarea>
+      </td>
+      <td>
+      
+      </td>
+    </tr>
+  </table>
+
+
+
+
+<!-- load ace -->
+<script src="{% static "js/editor/ace.js" %}"></script>
+<!-- load ace language tools -->
+<script src="{% static "js/editor/ext-language_tools.js" %}"></script>
+<script type="text/javascript">
+  document.getElementById('lang').value="C++";
+</script>
+
+
+<style type="text/css" media="screen">
+    body {
+        overflow-x: None;
+    }
+    
+    #editor { 
+        margin: 100;
+        position: absolute;
+        top: 100;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style> 
+
+<script>
+  function sendForm() {
+
+        var editor = ace.edit("code");
+        var text = editor.getValue();
+
+        document.getElementById('hidtext').value = text;
+        document.getElementById('mainForm').submit();
+
+        
+
+  }
+function edit () {
+    var lang_id = document.getElementById('lang');
+
+    ace.require("ace/ext/language_tools");
+
+    var editor = ace.edit("code");
+
+    if(lang_id.value=="C")
+    {   
+        editor.session.setMode("ace/mode/c_cpp");
+        editor.session.setValue(document.getElementById('bf1').value);
+    }
+    else if(lang_id.value=="C++")
+    {   
+        editor.session.setMode("ace/mode/c_cpp");
+        editor.session.setValue(document.getElementById('bf2').value);
+    }
+    else if(lang_id.value=="Java")
+    {   
+        editor.session.setMode("ace/mode/java");
+        editor.session.setValue(document.getElementById('bf3').value);
+    }
+
+    else if(lang_id.value=="Python")
+    {
+        editor.session.setMode("ace/mode/python");
+        editor.session.setValue(document.getElementById('bf4').value);
+    }
+        editor.setTheme("ace/theme/tomorrow");
+    // enable autocompletion and snippets
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false
+    });
+    
+    
+}
+window.onload(edit());
+</script>
+
+</form>
+</div>
+			</div>
+                        <!-- /.panel-body -->

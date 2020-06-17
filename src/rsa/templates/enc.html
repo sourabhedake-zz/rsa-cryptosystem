@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+
+{% block title%}
+
+Home | CRYPTO MASTER v1.0
+
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home/">CRYPTO MASTER</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/home">Home</a></li>
+                <li class="active" ><a href="/enc">Encryption</a></li>
+                <li><a href="/dec">Decryption</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<div class="jumbotron home-sec1 text-center">
+    <br><br><br><br>
+    <h1 class="text-center heading">CRYPTO MASTER - ENCRYPTION</h1>
+    <br><br><br>
+    <form method="POST"  enctype="multipart/form-data">
+            <label  class="btn btn-default custom-btn">
+            <input id="my-file-selector" type="file" name="upload" style="display:none;">
+            Upload File
+            </label>
+            <br><br><br><br>
+            
+            <button formaction="/upload/" class="btn btn-default custom-btn" >
+                Start Encrypting...
+            </button> 
+            
+            {% if rsaDone %}   
+            <br><br><br><br>
+            
+            <button formaction="/down/" class="btn btn-default custom-btn" >
+                Download Encryted file
+            </button>
+            
+            {% endif %}
+            </form>
+            
+
+</div>
+
+{% endblock %}

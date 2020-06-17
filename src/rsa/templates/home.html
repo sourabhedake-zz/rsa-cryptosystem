@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+
+{% block title%}
+
+Home | CRYPTO MASTER v1.0
+
+{% endblock title %}
+
+
+{% block content %}
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/home/">CRYPTO MASTER</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<div class="jumbotron home-sec1 text-center">
+    <br><br><br><br>
+    <h1 class="text-center heading">CRYPTO MASTER</h1>
+    <br><br><br>
+    <form  method="POST" >
+            <button formaction="/enc/" class="btn btn-default custom-btn">
+            Encrypt My File
+            </button>
+            </form>
+            <br><br><br>
+    <form  method="POST">
+            <button formaction="/dec/" class="btn btn-default custom-btn" >
+                Decrypt My File
+            </button>
+            </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+p{
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+.jumbotron {
+    position: relative;
+    background: #000 url("imgc1.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+input {
+    color: #FFF;
+    background-color: #0000CC;
+    font-weight: bold;
+    width: 25%;
+    height: 40px;
+}
+
+.jumbotron {
+    padding-top:50px;
+}
+
+.container {
+    padding-top:70px;
+}

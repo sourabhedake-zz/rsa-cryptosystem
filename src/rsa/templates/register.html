@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    {% load staticfiles %}
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>CRYPTO MASTER</title>
+
+        <!-- CSS -->
+
+        <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/static/assets/css/form-elements.css">
+        <link rel="stylesheet" href="/static/assets/css/style.css">
+        <link rel="stylesheet" href="/static/css/custom.css">
+
+    </head>
+
+    <body>
+
+
+
+    </div>
+<center>
+        <!-- Top content -->
+        <div class="top-content">
+        <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                    <h1 style="color: #FFF" ><strong>CRYPTO </strong>MASTER </h1>
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                            <div class="form-top">
+                                <div class="form-top-left">
+                                {% if log %}
+                                    <script type="text/javascript">
+                                        alert("User exists already...\nChoose new one..")
+                                    </script>
+                                {%endif%}
+                        			<h3>Signup Form</h3>
+                            		<p>Fill Up Your Details Here:</p>
+                        		</div >
+                            </div>
+
+                            <div class="form-bottom">
+			                    <form id="frm" action="/"  method="POST" class="login-form">
+			                    	<div class="form-group">
+			                        	<input style="width: 100%" type="text" name="username" placeholder="Username" 	class="form-username form-control" id="form-username">
+			                        </div>
+						            <div class="form-group">
+			                        	<input style="width: 100%" type="password" name="password" placeholder="Password" 	class="form-password form-control" id="password">
+			                        </div>
+
+                                        <button type="submit" style="font-size: 25px; background-color: #399; color: #144" formaction="/signup/" type="submit" id="permit"  name="permit" class="btn" value="Register" width="100%" height="100%" ><strong>Register</strong></button>
+
+                                    
+                                    <p></p>
+                                    <div>
+                                    </div>
+                                    
+                                    
+
+                                    
+                                        </form>
+                                        <form action="/" method="POST">
+                                        {% csrf_token %}
+                                            <button style="margin-left: 20%; margin-right: 20%; width: 60%; background-color: #995; color: #fff" formaction="/" type="submit" id="already" name="already" class="btn"  value="Login" >Login</button>
+                                        </form>
+
+
+
+
+		                    </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </center>
+
+
+        <!-- Javascript -->
+        <script src="{% static "Register/assets/js/jquery-1.11.1.min.js" %}"></script>
+        <script src="{% static "Register/assets/bootstrap/js/bootstrap.min.js" %}"></script>
+        <script src="{% static "Register/assets/js/jquery.backstretch.min.js" %}"></script>
+        <script src="{% static "Register/assets/js/scripts.js" %}"></script>
+
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
+

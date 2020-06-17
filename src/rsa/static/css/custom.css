@@ -1,0 +1,267 @@
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+
+input:not(.file-input) {
+    color: #000000;
+    background-color: #FFFFCC;
+    font-weight: bold;
+    width: 17%;
+    height: 40px;
+}
+
+.jumbotron {
+    padding-top:0px;
+}
+
+.container {
+    padding-top:0px;
+}
+
+
+
+
+
+
+
+
+select {
+width: 17%;
+}
+
+.home-thumb img:hover {
+transform: scale(0.7);
+}
+.thumbnail img {
+transition: all 0.3s ease 0s;
+width: 50%;
+}
+.thumbnail {
+overflow: hidden;
+}
+.bg-grey {
+background-color: #222;
+}
+.carousel {
+padding-bottom: 20px;
+}
+
+
+body
+{
+   font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+}
+
+h1,h2,h3,h4,h5{
+       font-family: 'Roboto', sans-serif;
+font-weight: 300;
+}
+
+
+
+
+/*================== Base.html style starts ============================*/
+
+a:focus,a:hover{
+    text-decoration: none;
+        color:#fff;
+
+}
+
+a{
+    color:#fff;
+}
+/*================== Base.html style ends ============================*/
+
+
+
+
+/*================== home.html style starts ============================*/
+.home-sec1{
+    background: url(../img/1.jpg);
+    height: 768px;
+    background-size: cover;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+div.time{
+    margin-top: 50px;
+}
+
+
+div.time a{
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+span.time-wrap{
+    /*border: 1px solid #fff;*/
+    padding: 30px 150px;
+    background: rgba(0, 0, 0, 0.57);
+    font-size: 50px;
+
+}
+
+h1.heading{
+    margin-top: 70px;
+    color: #fff;
+        text-shadow: 1px 1px 5px #000;
+
+
+}
+
+.custom-btn{
+        padding: 20px 30px;
+    background: rgba(25, 24, 24, 0.58);
+    outline: none;
+        color: #FFC107;
+    text-shadow: 1px 1px 1px #000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+
+.custom-btn:focus,.custom-btn:active{
+        outline: none;
+
+}
+
+.custom-btn:hover{
+    background: #FFC107;
+        text-shadow: none;
+    color: #fff;
+    border-color: #FFC107;;;
+
+}
+
+
+h1.heading-2{
+       color: #fff;
+        text-shadow: 1px 1px 5px #000;
+}
+
+.navbar-default{
+    background: #FFC107;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #fff;
+        color: #000;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-default .navbar-brand{
+    color:#000;
+}
+
+
+/*================== home.html style ends ============================*/
+
+
+
+/*================== all_questions.html style starts ============================*/
+
+.que-sec1{
+    background: url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    height: 150px;
+}
+
+.que-sec1 div.time a{
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+.que-sec1 div.time{
+    margin-top: 40px;
+}
+.que-sec1 span.time-wrap{
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.57);
+    font-size: 30px;
+
+}
+
+.que-sec1 h1.heading-2{
+    margin-top: 30px;
+       color: #fff;
+        text-shadow: 1px 1px 5px #000;
+}
+
+.que-sec1 .row .col-xs-12{
+    margin-left: -110px;
+}
+
+
+.table-wrap{
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 2px;
+    padding: 20px 20px;
+}
+
+a.question{
+    color: #000;
+}
+
+
+h1.que-title{
+    color: #fff;
+    margin-top: 50px;
+    margin-left: -77px;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 40px;
+}
+
+.que-sec2{
+    padding-top: 40px;
+}
+/*================== all_questions.html style ends ============================*/
+
+
+.sidebar span.time-wrap {
+    position: fixed;
+    left: 15px;
+    top:60px;
+    /* border: 1px solid #fff; */
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, 0.57);
+    font-size: 35px;
+}
+
+
+.sidebar div.time {
+       margin-top: -33px;
+    margin-bottom: 30px;
+}
+
+div.sidebar{
+        margin-top: 130px;
+    position: fixed;
+    left: 0px;
+    top:50px;
+}
+a.q-btn{
+    position: fixed;
+    left: 70px;
+    top:165px;
+}
